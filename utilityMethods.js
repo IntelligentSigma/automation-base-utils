@@ -1,7 +1,10 @@
 var utilityMethods = function(){
 
-
+  //clicks the center of element. can accept locator string
+  //or element as argument
   utilityMethods.prototype.clickCenterOf = function(elem){
+    if(typeof elem === 'string')
+      elem = $(elem);
     elem.getSize().then(function(dimensions){
       browser.actions()
       .mouseMove(elem, {x: dimensions.width/2, y: dimensions.height/2}).click()
