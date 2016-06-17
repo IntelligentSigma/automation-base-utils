@@ -1,0 +1,6 @@
+{
+    "name": "qa-shared-base-utils",
+    "version": "0.0.1",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "contributors": ["hadibus"]
+}
