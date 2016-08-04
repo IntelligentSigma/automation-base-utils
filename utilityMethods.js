@@ -78,6 +78,13 @@ var utilityMethods = function(){
     return dfd.promise;
   };
 
+  utilityMethods.prototype.getDisplayed = function(locatorString) {
+    return element.all(by.css(locatorString))
+      .filter(function(elem) {
+        return elem.isDisplayed();
+      })
+      .first();
+  }
 };
 
 module.exports = utilityMethods;
