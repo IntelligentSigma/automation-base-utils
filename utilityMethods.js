@@ -34,6 +34,7 @@ var utilityMethods = function(){
   // will be closed.
   utilityMethods.prototype.selectTabByUrlPart = function(targetUrl, closingTabs) {
     var dfd = protractor.promise.defer();
+    browser.sleep(5000);
     browser.getAllWindowHandles().then(function(handles){
       if(closingTabs){
         closeUnwantedTabs(targetUrl, handles, handles.length-1);
