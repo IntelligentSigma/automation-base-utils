@@ -1,6 +1,21 @@
 {
-    "name": "qa-shared-base-utils",
-    "version": "0.0.1",
-    "keywords": ["util", "functional", "server", "client", "browser"],
-    "contributors": ["hadibus"]
+  "name": "automation-base-utils",
+  "version": "1.0.1",
+  "keywords": ["util", "functional", "server", "client", "browser"],
+  "contributors": ["hadibus"],
+  "license": "CC-BY-SA-4.0",
+  "private": false,
+  "description": "Automation Test Base Class for use with Protractor",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IntelligentSigma/automation-base-utils.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": "6.10.0"
+  }
 }
