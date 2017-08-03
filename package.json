@@ -1,6 +1,6 @@
 {
   "name": "automation-base-utils",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "keywords": ["util", "functional", "server", "client", "browser"],
   "contributors": ["hadibus"],
   "license": "CC-BY-SA-4.0",

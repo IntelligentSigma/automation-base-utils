@@ -1,6 +1,4 @@
-var chai = require('chai');
 var until = protractor.ExpectedConditions;
-var expect = chai.expect;
 var utilityMethods = function(){
 
   //clicks the center of element. can accept locator string
