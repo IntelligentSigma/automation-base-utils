@@ -1,3 +1,6 @@
+var chai = require('chai');
+var until = protractor.ExpectedConditions;
+var expect = chai.expect;
 var utilityMethods = function(){
 
   //clicks the center of element. can accept locator string
@@ -7,8 +10,8 @@ var utilityMethods = function(){
       elem = $(elem);
     elem.getSize().then(function(dimensions){
       browser.actions()
-      .mouseMove(elem, {x: dimensions.width/2, y: dimensions.height/2}).click()
-      .perform();
+        .mouseMove(elem, {x: dimensions.width/2, y: dimensions.height/2}).click()
+        .perform();
     });
   };
 
@@ -19,14 +22,14 @@ var utilityMethods = function(){
       var e = element(by.css(elem));
       e.getSize().then(function(dim){
         browser.actions()
-        .mouseMove(e, {x: dim.width/2, y: dim.height/2}).perform();
+          .mouseMove(e, {x: dim.width/2, y: dim.height/2}).perform();
       });
     }
     else
-    elem.getSize().then(function(dim){
-      browser.actions()
-      .mouseMove(elem, {x: dim.width/2, y: dim.height/2}).perform();
-    });
+      elem.getSize().then(function(dim){
+        browser.actions()
+          .mouseMove(elem, {x: dim.width/2, y: dim.height/2}).perform();
+      });
   };
 
   //Changes focus to page that contains targetUrl in its url.
